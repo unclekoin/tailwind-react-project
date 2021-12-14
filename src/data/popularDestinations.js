@@ -1,4 +1,4 @@
-import toronto from "../img/toronto.jpg";
+// import toronto from "../img/toronto.jpg";
 import malibu from "../img/malibu.jpg";
 import chicago from "../img/chicago.jpg";
 import seattle from "../img/seattle.jpg";
@@ -10,7 +10,7 @@ const popularDestinations = [
     city: 'Toronto',
     averagePrice: 120,
     propertyCount: 76,
-    imageUrl: toronto,
+    imageUrl: require("../img/toronto.jpg"),
     imageAlt: 'Toronto skyline',
   },
   {

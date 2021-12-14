@@ -1,12 +1,12 @@
 import React from 'react';
 import popularDestinations from './data/popularDestinations';
 import DestinationCard from './components/DestinationCard';
-import logo from './img/logo.svg'
+import logo from './img/logo-brand.svg';
 import beachWork from './img/beach-work.jpg';
 
 export default function App() {
   return (
-    <div>
+    <div className="bg-gray-200 min-h-screen">
       <div className="bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5">
         <div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
           <div className="xl:max-w-xl">
@@ -16,10 +16,10 @@ export default function App() {
               src={beachWork}
               alt="Woman workcationing on the beach"
             />
-            <h1 className="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
+            <h1 className="mt-6 text-2xl font-headline tracking-tight font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
               You can work from anywhere.
               <br className="hidden lg:inline" />{' '}
-              <span className="text-indigo-500">Take advantage of it.</span>
+              <span className="text-brand">Take advantage of it.</span>
             </h1>
             <p className="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
               Workcation helps you find work-friendly rentals in beautiful
@@ -28,7 +28,7 @@ export default function App() {
             </p>
             <div className="mt-4 space-x-1 sm:mt-6">
               <a
-                className="inline-block px-5 py-3 rounded-lg transform transition bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:ring-indigo-500 focus:ring-opacity-50 focus:outline-none focus:ring focus:ring-offset-2 active:bg-indigo-600 uppercase tracking-wider font-semibold text-sm text-white shadow-lg sm:text-base"
+                className="btn btn-primary shadow-lg hover:-translate-y-0.5 transform transition"
                 href="/"
               >
                 Book your escape
